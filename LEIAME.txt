@@ -1,0 +1,18 @@
+Bully PC (Scholarship Edition) recompilado para Android — versao 0.1 (so o boot, ainda sem imagem)
+
+Como compilar (AndroidIDE):
+  1. Abra a pasta BullyPC como projeto.
+  2. Confira em gradle.properties o caminho do SDL2 (bully.sdl2): e a mesma pasta usada no PS2Android.
+  3. Compile normalmente. O codigo recompilado (app/src/main/cpp/gen) tem ~70 MB de C++ em 24 arquivos.
+
+Como testar:
+  1. Instale e abra o app uma vez (ele cria a pasta Android/data/com.bully.pc/files).
+  2. Copie a instalacao inteira do Bully do PC (a pasta com Bully.exe e os arquivos do jogo) para
+     Android/data/com.bully.pc/files/Bully
+  3. Abra o app. Tela azul = o jogo esta iniciando; tela vermelha = parou (motivo no log).
+  4. Log: Android/data/com.bully.pc/files/bully-log.txt
+
+Estado: o jogo passa pela inicializacao da biblioteca C, le o registro e para ao criar o Direct3D 9
+("Direct3DCreate9"), que e a proxima etapa (camada DirectX 9 -> OpenGL ES).
+
+tools/: x86rc.py (recompilador x86 -> C), build.sh e main_pc.cpp (teste de boot no PC).

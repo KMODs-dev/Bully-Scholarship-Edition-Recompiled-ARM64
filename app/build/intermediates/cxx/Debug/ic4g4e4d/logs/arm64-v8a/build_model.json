@@ -1,0 +1,171 @@
+{
+  "abi": "ARM64_V8A",
+  "info": {
+    "abi": "ARM64_V8A",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a",
+  "soFolder": "/storage/emulated/0/Download/BullyPC/app/build/intermediates/cxx/Debug/ic4g4e4d/obj/arm64-v8a",
+  "soRepublishFolder": "/storage/emulated/0/Download/BullyPC/app/build/intermediates/cmake/debug/obj/arm64-v8a",
+  "abiPlatformVersion": 29,
+  "cmake": {
+    "effectiveConfiguration": {
+      "inheritEnvironments": [],
+      "variables": []
+    }
+  },
+  "variant": {
+    "buildSystemArgumentList": [
+      "-DANDROID_STL\u003dc++_static",
+      "-DSDL2_DIR\u003d/storage/emulated/0/ps2/SDL2-2.32.10"
+    ],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARM64_V8A"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "/storage/emulated/0/Download/BullyPC/app/.cxx",
+      "intermediatesBaseFolder": "/storage/emulated/0/Download/BullyPC/app/build/intermediates",
+      "intermediatesFolder": "/storage/emulated/0/Download/BullyPC/app/build/intermediates/cxx",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/storage/emulated/0/Download/BullyPC/app",
+      "moduleBuildFile": "/storage/emulated/0/Download/BullyPC/app/build.gradle",
+      "makeFile": "/storage/emulated/0/Download/BullyPC/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865",
+      "ndkVersion": "29.0.14206865",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 21,
+        "max": 35,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31,
+          "Sv2": 32,
+          "Tiramisu": 33,
+          "UpsideDownCake": 34,
+          "VanillaIceCream": 35
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/cmake",
+        "minimumCmakeVersion": "3.22.1"
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "/storage/emulated/0/Download/BullyPC",
+        "sdkFolder": "/data/user/0/com.itsaky.androidide/files/home/android-sdk",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "outputOptions": [],
+      "ninjaExe": "/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja"
+    },
+    "prefabClassPaths": [],
+    "prefabPackages": [],
+    "prefabPackageConfigurations": [],
+    "stlType": "c++_static",
+    "optimizationTag": "Debug"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/prefab/arm64-v8a",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "ic4g4e4d4td4z5z6h6v70654g3o3t5q6h536j273q4w5u1f2y1o646s30111v",
+  "configurationArguments": [
+    "-H/storage/emulated/0/Download/BullyPC/app/src/main/cpp",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_SYSTEM_VERSION\u003d29",
+    "-DANDROID_PLATFORM\u003dandroid-29",
+    "-DANDROID_ABI\u003darm64-v8a",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a",
+    "-DANDROID_NDK\u003d/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865",
+    "-DCMAKE_ANDROID_NDK\u003d/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003d/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/storage/emulated/0/Download/BullyPC/app/build/intermediates/cxx/Debug/ic4g4e4d/obj/arm64-v8a",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/storage/emulated/0/Download/BullyPC/app/build/intermediates/cxx/Debug/ic4g4e4d/obj/arm64-v8a",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-B/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a",
+    "-GNinja",
+    "-DANDROID_STL\u003dc++_static",
+    "-DSDL2_DIR\u003d/storage/emulated/0/ps2/SDL2-2.32.10"
+  ],
+  "intermediatesParentFolder": "/storage/emulated/0/Download/BullyPC/app/build/intermediates/cxx/Debug/ic4g4e4d"
+}

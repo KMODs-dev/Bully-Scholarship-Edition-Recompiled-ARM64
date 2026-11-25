@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+def bullySdl2 = project.property('bully.sdl2')
+
+android {
+    namespace 'com.bully.pc'
+    compileSdk 33
+    // Confira o nome da pasta em <Android SDK>/ndk/ e troque se for diferente
+    ndkVersion '29.0.14206865'
+
+    defaultConfig {
+        applicationId 'com.bully.pc'
+        minSdk 29
+        targetSdk 33
+        versionCode 1
+        versionName '0.7'
+        ndk { abiFilters 'arm64-v8a' }
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_STL=c++_static", "-DSDL2_DIR=${bullySdl2}", "-DBULLY_JOBS=${project.findProperty('bully.jobs') ?: '2'}"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += "${bullySdl2}/android-project/app/src/main/java"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release { minifyEnabled false }
+    }
+}

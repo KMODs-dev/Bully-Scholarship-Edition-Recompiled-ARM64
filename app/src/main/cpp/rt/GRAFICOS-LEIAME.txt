@@ -1,0 +1,30 @@
+PARTE GRAFICA DO BULLY PC (Direct3D 9 -> OpenGL ES 3)
+
+Arquivos
+  rt/d3d9_com.h/.cpp   objetos COM falsos na memoria do jogo (vtable de thunks, refcount)
+  rt/d3d9_internal.h   objetos nativos (Tex, Surface, Buf, VDecl, Shader, SBlock, Device) e o estado (DevState)
+  rt/d3d9.cpp          IDirect3D9, IDirect3DDevice9 (119 metodos) e recursos; guarda TODO o estado do D3D9
+  rt/d3dx9.cpp         d3dx9_38.dll: matematica, ID3DXBuffer, ID3DXConstantTable (CTAB), DDS, cache de shaders
+  rt/gfx.h             interface do backend (o unico ponto que fala com a API grafica)
+  rt/gfx_null.cpp      backend que nao desenha (teste de boot no PC)
+  app/.../gfx_gles.cpp backend OpenGL ES 3 (esqueleto; lista de tarefas no topo do arquivo)
+
+Regras
+  - d3d9.cpp nao chama GL. Tudo que e GL fica em gfx_gles.cpp. Um backend Vulkan seria outro gfx_vulkan.cpp.
+  - Metodo COM: static uint32_t Nome(Cpu &c, const uint32_t *a); a[0] = this, a[1..] = argumentos (ordem do d3d9.h).
+    Ponteiros sao enderecos de 32 bits do jogo: ler/gravar com rd32/wr32 ou M + endereco. Floats chegam como bits.
+  - Metodo sem implementacao (fn = nullptr) registra "[com] sem implementacao" uma vez no log e devolve 0.
+  - O jogo roda numa thread so para o D3D; o contexto GL e atual nessa thread (pego no CreateDevice).
+
+Shaders
+  O Bully compila HLSL em tempo de execucao (D3DXCompileShader). Nao ha compilador no aparelho, entao:
+  1. na 1a execucao cada shader e gravado em files/shaders/<hash>.hlsl + <hash>.txt (entrada, perfil, defines);
+  2. no PC, compilar cada um com o fxc do DirectX SDK:  fxc /T <perfil> /E <entrada> <defines> /Fo <hash>.bin <hash>.hlsl
+  3. copiar os .bin para files/shaders/. Dai o D3DXCompileShader devolve o bytecode e a tabela de constantes.
+  O backend recebe bytecode D3D9 (shader_create) e precisa traduzir para GLSL ES (tarefa 4 do gfx_gles.cpp).
+  Efeitos (D3DXCreateEffect / ID3DXEffect) ainda nao existem: aparecem no log se o jogo usar.
+
+O que ainda falta na camada D3D9 (marcado TODO no codigo)
+  StretchRect, ColorFill, GetRenderTargetData, UpdateSurface, Clear com retangulos, GenerateMipSubLevels,
+  instancing (SetStreamSourceFreq), LockBox parcial, Reset com troca de tamanho, mipmaps/conversao no carregamento DDS,
+  texturas que nao sao DDS (PNG/TGA/BMP), membros de struct no ConstantTable.

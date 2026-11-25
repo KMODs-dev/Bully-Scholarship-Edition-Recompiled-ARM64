@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "SDL2-build",
+		"source" : "/storage/emulated/0/ps2/SDL2-2.32.10"
+	}
+}

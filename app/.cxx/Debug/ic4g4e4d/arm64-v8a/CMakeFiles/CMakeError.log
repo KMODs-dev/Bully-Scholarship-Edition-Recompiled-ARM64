@@ -1,0 +1,1046 @@
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_52945 && [1/2] Building C object CMakeFiles/cmTC_52945.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_52945.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_52945.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_52945.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_52945.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier '__GLIBC__'
+    8 |   return ((int*)(&__GLIBC__))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X86 failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_0b59e && [1/2] Building C object CMakeFiles/cmTC_0b59e.dir/src.c.o
+FAILED: CMakeFiles/cmTC_0b59e.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCHECK_CPU_ARCHITECTURE_X86  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_0b59e.dir/src.c.o -MF CMakeFiles/cmTC_0b59e.dir/src.c.o.d -o CMakeFiles/cmTC_0b59e.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+    6 |   choke
+      |   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__i386__) || defined(__i486__) || defined(__i586__) || defined(__i686__) ||defined( __i386) || defined(_M_IX86)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_af135 && [1/2] Building C object CMakeFiles/cmTC_af135.dir/src.c.o
+FAILED: CMakeFiles/cmTC_af135.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCHECK_CPU_ARCHITECTURE_X64  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_af135.dir/src.c.o -MF CMakeFiles/cmTC_af135.dir/src.c.o.d -o CMakeFiles/cmTC_af135.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+    6 |   choke
+      |   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if (defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)) && !defined(_M_ARM64EC)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_df74f && [1/2] Building C object CMakeFiles/cmTC_df74f.dir/src.c.o
+FAILED: CMakeFiles/cmTC_df74f.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCHECK_CPU_ARCHITECTURE_ARM32  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_df74f.dir/src.c.o -MF CMakeFiles/cmTC_df74f.dir/src.c.o.d -o CMakeFiles/cmTC_df74f.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+    6 |   choke
+      |   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64EC failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_23817 && [1/2] Building C object CMakeFiles/cmTC_23817.dir/src.c.o
+FAILED: CMakeFiles/cmTC_23817.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCHECK_CPU_ARCHITECTURE_ARM64EC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_23817.dir/src.c.o -MF CMakeFiles/cmTC_23817.dir/src.c.o.d -o CMakeFiles/cmTC_23817.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+    6 |   choke
+      |   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(_M_ARM64EC)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_eb372 && [1/2] Building C object CMakeFiles/cmTC_eb372.dir/src.c.o
+FAILED: CMakeFiles/cmTC_eb372.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_eb372.dir/src.c.o -MF CMakeFiles/cmTC_eb372.dir/src.c.o.d -o CMakeFiles/cmTC_eb372.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+    6 |   choke
+      |   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Determining if the include file immintrin.h exists failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_9d8e0 && [1/2] Building C object CMakeFiles/cmTC_9d8e0.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_9d8e0.dir/CheckIncludeFile.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_9d8e0.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_9d8e0.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_9d8e0.dir/CheckIncludeFile.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+In file included from /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/immintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+   14 | #error "This header is only meant to be used on x86 and x64 architecture"
+      |  ^
+In file included from /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+In file included from /data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/immintrin.h:17:
+In file included from /data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/x86gprintrin.h:14:
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/hresetintrin.h:42:27: error: invalid input constraint 'a' in asm
+   42 |   __asm__ ("hreset $0" :: "a"(__eax));
+      |                           ^
+In file included from /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+In file included from /data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/immintrin.h:20:
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+   14 | #error "This header is only meant to be used on x86 and x64 architecture"
+      |  ^
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:165:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  165 |     return __trunc64(__builtin_ia32_packsswb128(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  166 |         (__v8hi)__builtin_shufflevector(__m1, __m2, 0, 1), (__v8hi){}));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:191:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  191 |     return __trunc64(__builtin_ia32_packssdw128(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  192 |         (__v4si)__builtin_shufflevector(__m1, __m2, 0, 1), (__v4si){}));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:217:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  217 |     return __trunc64(__builtin_ia32_packuswb128(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  218 |         (__v8hi)__builtin_shufflevector(__m1, __m2, 0, 1), (__v8hi){}));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:707:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  707 |     return __trunc64(__builtin_ia32_pmaddwd128((__v8hi)__anyext128(__m1),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  708 |                                                (__v8hi)__anyext128(__m2)));
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:729:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  729 |     return __trunc64(__builtin_ia32_pmulhw128((__v8hi)__anyext128(__m1),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  730 |                                               (__v8hi)__anyext128(__m2)));
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:774:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  774 |     return __trunc64(__builtin_ia32_psllw128((__v8hi)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  775 |                                              (__v8hi)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:797:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  797 |     return __trunc64(__builtin_ia32_psllwi128((__v8hi)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  798 |                                               __count));
+      |                                               ~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:821:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  821 |     return __trunc64(__builtin_ia32_pslld128((__v4si)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  822 |                                              (__v4si)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:844:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  844 |     return __trunc64(__builtin_ia32_pslldi128((__v4si)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  845 |                                               __count));
+      |                                               ~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:865:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  865 |     return __trunc64(__builtin_ia32_psllq128((__v2di)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  866 |                                              (__v2di)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:886:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  886 |     return __trunc64(__builtin_ia32_psllqi128((__v2di)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  887 |                                               __count));
+      |                                               ~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:911:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  911 |     return __trunc64(__builtin_ia32_psraw128((__v8hi)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  912 |                                              (__v8hi)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:935:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  935 |     return __trunc64(__builtin_ia32_psrawi128((__v8hi)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  936 |                                               __count));
+      |                                               ~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:960:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  960 |     return __trunc64(__builtin_ia32_psrad128((__v4si)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  961 |                                              (__v4si)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:984:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+  984 |     return __trunc64(__builtin_ia32_psradi128((__v4si)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  985 |                                               __count));
+      |                                               ~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:1008:12: error: invalid conversion between vector type '__v2di' (vector of 2 'long long' values) and integer type 'int' of different size
+ 1008 |     return __trunc64(__builtin_ia32_psrlw128((__v8hi)__anyext128(__m),
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1009 |                                              (__v8hi)__anyext128(__count)));
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/mmintrin.h:59:35: note: expanded from macro '__trunc64'
+   59 |   (__m64) __builtin_shufflevector((__v2di)(x), __extension__(__v2di){}, 0)
+      |                                   ^~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_f81e6 && [1/2] Building C object CMakeFiles/cmTC_f81e6.dir/src.c.o
+FAILED: CMakeFiles/cmTC_f81e6.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DHAVE_ALTIVEC_H_HDR  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos" -maltivec -fPIE -MD -MT CMakeFiles/cmTC_f81e6.dir/src.c.o -MF CMakeFiles/cmTC_f81e6.dir/src.c.o.d -o CMakeFiles/cmTC_f81e6.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-maltivec' for target 'aarch64-none-linux-android29'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test CPU_SUPPORTS_ALTIVEC failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_35062 && [1/2] Building C object CMakeFiles/cmTC_35062.dir/src.c.o
+FAILED: CMakeFiles/cmTC_35062.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DCPU_SUPPORTS_ALTIVEC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos" -maltivec -fPIE -MD -MT CMakeFiles/cmTC_35062.dir/src.c.o -MF CMakeFiles/cmTC_35062.dir/src.c.o.d -o CMakeFiles/cmTC_35062.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-maltivec' for target 'aarch64-none-linux-android29'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Determining if the _strrev exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_9244d && [1/2] Building C object CMakeFiles/cmTC_9244d.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_9244d.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_9244d.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9244d.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9244d.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strrev'
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_69a21 && [1/2] Building C object CMakeFiles/cmTC_69a21.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_69a21.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_69a21.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_69a21.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_69a21.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strupr'
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_cff7c && [1/2] Building C object CMakeFiles/cmTC_cff7c.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_cff7c.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_cff7c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cff7c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cff7c.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strlwr'
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the index exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_f0e00 && [1/2] Building C object CMakeFiles/cmTC_f0e00.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_f0e00.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_f0e00.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_f0e00.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_f0e00.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: call to undeclared library function 'index' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   return ((int*)(&index))[argc];
+      |                   ^
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: include the header <strings.h> or explicitly provide a declaration for 'index'
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef index
+  return ((int*)(&index))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the rindex exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_b0631 && [1/2] Building C object CMakeFiles/cmTC_b0631.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_b0631.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_b0631.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_b0631.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_b0631.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: call to undeclared library function 'rindex' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   return ((int*)(&rindex))[argc];
+      |                   ^
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: include the header <strings.h> or explicitly provide a declaration for 'rindex'
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef rindex
+  return ((int*)(&rindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_3c96d && [1/2] Building C object CMakeFiles/cmTC_3c96d.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_3c96d.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_3c96d.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3c96d.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3c96d.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier 'itoa'
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_cd0d7 && [1/2] Building C object CMakeFiles/cmTC_cd0d7.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_cd0d7.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_cd0d7.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cd0d7.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cd0d7.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ltoa'
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_a20f8 && [1/2] Building C object CMakeFiles/cmTC_a20f8.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_a20f8.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_a20f8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_a20f8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_a20f8.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_uitoa'
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_77d0b && [1/2] Building C object CMakeFiles/cmTC_77d0b.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_77d0b.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_77d0b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_77d0b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_77d0b.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ultoa'
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_e1b85 && [1/2] Building C object CMakeFiles/cmTC_e1b85.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e1b85.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_e1b85.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e1b85.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e1b85.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_i64toa'
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_0d60b && [1/2] Building C object CMakeFiles/cmTC_0d60b.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_0d60b.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_0d60b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_0d60b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_0d60b.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ui64toa'
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_a0dd0 && [1/2] Building C object CMakeFiles/cmTC_a0dd0.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_a0dd0.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_a0dd0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_a0dd0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_a0dd0.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_stricmp'
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_dc5e0 && [1/2] Building C object CMakeFiles/cmTC_dc5e0.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_dc5e0.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_dc5e0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_dc5e0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_dc5e0.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strnicmp'; did you mean 'strncmp'?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot/usr/include/string.h:196:5: note: 'strncmp' declared here
+  196 | int strncmp(const char* _Nonnull __lhs, const char* _Nonnull __rhs, size_t __n) __attribute_pure__;
+      |     ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsdup exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_8f86e && [1/2] Building C object CMakeFiles/cmTC_8f86e.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_8f86e.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_8f86e.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_8f86e.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_8f86e.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsdup'; did you mean 'wcsdup'?
+   14 |   return ((int*)(&_wcsdup))[argc];
+      |                   ^~~~~~~
+      |                   wcsdup
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot/usr/include/wchar.h:157:20: note: 'wcsdup' declared here
+  157 | wchar_t* _Nullable wcsdup(const wchar_t* _Nonnull __s);
+      |                    ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsdup
+  return ((int*)(&_wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_a7f41 && [1/2] Building C object CMakeFiles/cmTC_a7f41.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_a7f41.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_a7f41.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_a7f41.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_a7f41.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsicmp'
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_bc607 && [1/2] Building C object CMakeFiles/cmTC_bc607.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_bc607.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_bc607.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_bc607.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_bc607.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsnicmp'; did you mean 'wcsncmp'?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot/usr/include/wchar.h:103:5: note: 'wcsncmp' declared here
+  103 | int wcsncmp(const wchar_t* _Nonnull __lhs, const wchar_t* _Nonnull __rhs, size_t __n);
+      |     ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_7e710 && [1/2] Building C object CMakeFiles/cmTC_7e710.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_7e710.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_7e710.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_7e710.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_7e710.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: 'sys/sysctl.h' file not found
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_30581 && [1/2] Building C object CMakeFiles/cmTC_30581.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_30581.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_30581.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_30581.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_30581.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'elf_aux_info'
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memfd_create exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_f3997 && [1/2] Building C object CMakeFiles/cmTC_f3997.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_f3997.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_f3997.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_f3997.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_f3997.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'memfd_create'
+    8 |   return ((int*)(&memfd_create))[argc];
+      |                   ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mman.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memfd_create
+  return ((int*)(&memfd_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test ICONV_IN_LIBICONV failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_9199d && [1/2] Building C object CMakeFiles/cmTC_9199d.dir/src.c.o
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:5:32: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+    5 |             return !iconv_open(NULL,NULL);
+      |                                ^~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/__stddef_null.h:26:14: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |              ^~~~~~~~~~
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c:5:37: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+    5 |             return !iconv_open(NULL,NULL);
+      |                                     ^~~~
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/lib/clang/21/include/__stddef_null.h:26:14: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |              ^~~~~~~~~~
+2 warnings generated.
+[2/2] Linking C executable cmTC_9199d
+FAILED: cmTC_9199d 
+: && /data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments CMakeFiles/cmTC_9199d.dir/src.c.o -o cmTC_9199d  -liconv  -latomic -lm && :
+ld.lld: error: unable to find library -liconv
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+        #include <stddef.h>
+        #include <iconv.h>
+        int main(int argc, char **argv) {
+            return !iconv_open(NULL,NULL);
+        }
+Determining if the alloca exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_96570 && [1/2] Building C object CMakeFiles/cmTC_96570.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_96570.dir/CheckSymbolExists.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_96570.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_96570.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_96570.dir/CheckSymbolExists.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: call to undeclared library function 'alloca' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: include the header <stdlib.h> or explicitly provide a declaration for 'alloca'
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_ARM_MODE failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_645ce && [1/2] Building C object CMakeFiles/cmTC_645ce.dir/src.c.o
+FAILED: CMakeFiles/cmTC_645ce.dir/src.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot -DHAVE_ARM_MODE  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos" -Werror=unused-command-line-argument -fPIE   -marm -MD -MT CMakeFiles/cmTC_645ce.dir/src.c.o -MF CMakeFiles/cmTC_645ce.dir/src.c.o.d -o CMakeFiles/cmTC_645ce.dir/src.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-mno-thumb' for target 'aarch64-none-linux-android29'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/data/user/0/com.itsaky.androidide/files/home/android-sdk/cmake/3.22.1/bin/ninja cmTC_0df2a && [1/2] Building C object CMakeFiles/cmTC_0df2a.dir/HAVE_PTHREAD_NP_H.c.o
+FAILED: CMakeFiles/cmTC_0df2a.dir/HAVE_PTHREAD_NP_H.c.o 
+/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/bin/clang --target=aarch64-none-linux-android29 --sysroot=/data/user/0/com.itsaky.androidide/files/home/android-sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-arm64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -idirafter "/storage/emulated/0/ps2/SDL2-2.32.10/src/video/khronos"  -D_GNU_SOURCE=1 -fPIE -MD -MT CMakeFiles/cmTC_0df2a.dir/HAVE_PTHREAD_NP_H.c.o -MF CMakeFiles/cmTC_0df2a.dir/HAVE_PTHREAD_NP_H.c.o.d -o CMakeFiles/cmTC_0df2a.dir/HAVE_PTHREAD_NP_H.c.o -c /storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+/storage/emulated/0/Download/BullyPC/app/.cxx/Debug/ic4g4e4d/arm64-v8a/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: 'pthread_np.h' file not found
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+

@@ -1,0 +1,9 @@
+com.bully.pc.app-logsender-2.7.1-beta-debug-0 /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/res
+com.bully.pc.app-pngs-1 /storage/emulated/0/Download/BullyPC/app/build/generated/res/pngs/debug
+com.bully.pc.app-resValues-2 /storage/emulated/0/Download/BullyPC/app/build/generated/res/resValues/debug
+com.bully.pc.app-rs-3 /storage/emulated/0/Download/BullyPC/app/build/generated/res/rs/debug
+com.bully.pc.app-packageDebugResources-4 /storage/emulated/0/Download/BullyPC/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.bully.pc.app-packageDebugResources-5 /storage/emulated/0/Download/BullyPC/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.bully.pc.app-merged_res-6 /storage/emulated/0/Download/BullyPC/app/build/intermediates/merged_res/debug
+com.bully.pc.app-debug-7 /storage/emulated/0/Download/BullyPC/app/src/debug/res
+com.bully.pc.app-main-8 /storage/emulated/0/Download/BullyPC/app/src/main/res

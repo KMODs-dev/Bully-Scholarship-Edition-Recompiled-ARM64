@@ -1,0 +1,144 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+MERGED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:18:1-44:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+	package
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#0x00030000
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:5-77
+	android:glEsVersion
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:19-51
+	android:required
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:52-75
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:5:22-79
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:7:22-78
+application
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:8:5-33:19
+MERGED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:31:5-42:19
+MERGED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:31:5-42:19
+	android:requestLegacyExternalStorage
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:14:9-52
+	android:label
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:9:9-33
+	android:hasCode
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:13:9-31
+	android:appCategory
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:11:9-35
+	android:allowBackup
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:10:9-36
+	android:isGame
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:12:9-30
+activity#com.bully.pc.LauncherActivity
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:15:9-24:20
+	android:exported
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:17:13-36
+	android:configChanges
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:19:13-106
+	android:theme
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:18:13-70
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:16:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:21:17-68
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:22:17-76
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.bully.pc.BullyActivity
+ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:25:9-32:20
+	android:screenOrientation
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:28:13-56
+	android:launchMode
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:27:13-37
+	android:configChanges
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:30:13-141
+	android:theme
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:29:13-71
+	android:name
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:26:13-42
+uses-sdk
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+MERGED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:21:5-44
+MERGED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:21:5-44
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		ADDED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+		INJECTED from /storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+queries
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:23:5-25:15
+package#com.itsaky.androidide
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:24:9-57
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:24:18-54
+uses-permission#android.permission.INTERNET
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:27:5-67
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:27:22-64
+uses-permission#com.itsaky.androidide.permission.BIND_LOG_SERVICE
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:28:5-89
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:28:22-86
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:29:5-77
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:29:22-74
+provider#com.itsaky.androidide.logsender.utils.LogSenderInstaller
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:32:9-36:40
+	android:enabled
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:35:13-54
+	android:authorities
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:34:13-71
+	android:exported
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:33:13-84
+service#com.itsaky.androidide.logsender.LogSenderService
+ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:38:9-41:56
+	android:exported
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:40:13-37
+	android:foregroundServiceType
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:41:13-53
+	android:name
+		ADDED from [com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:39:13-76

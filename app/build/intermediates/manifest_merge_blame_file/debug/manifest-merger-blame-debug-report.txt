@@ -1,0 +1,121 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bully.pc"
+4    android:versionCode="1"
+5    android:versionName="0.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+8-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature
+11-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:5-77
+12        android:glEsVersion="0x00030000"
+12-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:19-51
+13        android:required="true" />
+13-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:3:52-75
+14    <!-- ler a pasta do jogo fora da pasta do app (escolhida no launcher) -->
+15    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+15-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:5:5-81
+15-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:5:22-79
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:6:5-79
+16-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:6:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:7:5-80
+17-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:7:22-78
+18
+19    <queries>
+19-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:23:5-25:15
+20        <package android:name="com.itsaky.androidide" />
+20-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:24:9-57
+20-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:24:18-54
+21    </queries>
+22
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:27:5-67
+23-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:27:22-64
+24    <uses-permission android:name="com.itsaky.androidide.permission.BIND_LOG_SERVICE" />
+24-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:28:5-89
+24-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:28:22-86
+25    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+25-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:29:5-77
+25-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:29:22-74
+26
+27    <application
+27-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:8:5-33:19
+28        android:allowBackup="false"
+28-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:10:9-36
+29        android:appCategory="game"
+29-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:11:9-35
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:hasCode="true"
+32-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:13:9-31
+33        android:isGame="true"
+33-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:12:9-30
+34        android:label="Bully PC"
+34-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:9:9-33
+35        android:requestLegacyExternalStorage="true" >
+35-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:14:9-52
+36        <activity
+36-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:15:9-24:20
+37            android:name="com.bully.pc.LauncherActivity"
+37-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:16:13-45
+38            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden"
+38-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:19:13-106
+39            android:exported="true"
+39-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:17:13-36
+40            android:theme="@android:style/Theme.Material.NoActionBar" >
+40-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:18:13-70
+41            <intent-filter>
+41-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:20:13-23:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:21:17-68
+42-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:21:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:22:17-76
+44-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:22:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:25:9-32:20
+48            android:name="com.bully.pc.BullyActivity"
+48-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:26:13-42
+49            android:configChanges="keyboardHidden|keyboard|orientation|screenSize|smallestScreenSize|screenLayout|uiMode|density|navigation"
+49-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:30:13-141
+50            android:exported="false"
+50-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:27:13-37
+51            android:launchMode="singleTask"
+51-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:31:13-44
+52            android:screenOrientation="sensorLandscape"
+52-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:28:13-56
+53            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+53-->/storage/emulated/0/Download/BullyPC/app/src/main/AndroidManifest.xml:29:13-71
+54        </activity>
+55
+56        <provider
+56-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:32:9-36:40
+57            android:name="com.itsaky.androidide.logsender.utils.LogSenderInstaller"
+57-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:33:13-84
+58            android:authorities="com.bully.pc.logsender-installer"
+58-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:34:13-71
+59            android:enabled="@bool/logsender_enabled"
+59-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:35:13-54
+60            android:exported="false" />
+60-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:36:13-37
+61
+62        <service
+62-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:38:9-41:56
+63            android:name="com.itsaky.androidide.logsender.LogSenderService"
+63-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:39:13-76
+64            android:exported="false"
+64-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:40:13-37
+65            android:foregroundServiceType="dataSync" />
+65-->[com.itsaky.androidide:logsender:2.7.1-beta] /data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/b01642dd26d693ba3f60409c345c688b/transformed/logsender-2.7.1-beta-debug/AndroidManifest.xml:41:13-53
+66    </application>
+67
+68</manifest>
