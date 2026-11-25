@@ -7,6 +7,20 @@ XACT3, DirectInput/XInput, arquivos, threads, registro) foram reescritas sobre O
 > **Este repositório não contém o jogo.** Para jogar é preciso ter uma cópia original do Bully: Scholarship Edition de
 > PC (exe 1.200) e copiar os arquivos do jogo para o aparelho.
 
+## Download e instalação (para jogar)
+
+1. Baixe o APK mais recente na página de
+   **[Releases](https://github.com/KMODs-dev/Bully-Scolarship-Edition-Recompiled-ARM64/releases)** e instale
+   (permita "instalar apps de fontes desconhecidas" se o Android pedir).
+2. Copie a pasta do Bully: Scholarship Edition **de PC, versão 1.200**, já instalado, para
+   `Android/data/com.bully.pc/files/Bully` no celular (ou escolha outra pasta no launcher).
+3. Abra o app. No launcher, escolha a resolução, as sombras, o limite de FPS e a tela cheia, e toque em **JOGAR**.
+4. Se algo der errado, o log fica em `Android/data/com.bully.pc/files/bully-log.txt`. Anexe esse arquivo ao abrir
+   uma issue.
+
+Dicas para o Helio G85 / Mali-G52: sombras desligadas, limite de 30 FPS e uma resolução 16:9 (1066x600 ou
+1280x720) com a tela cheia ligada.
+
 ## Como funciona
 
 | Parte | Onde | O que faz |
@@ -44,7 +58,9 @@ Medido com o log do próprio port (`bully-log.txt`), na escola, a 1280x720:
   No PC, Android Studio com NDK também funciona.
 - Para regerar o código traduzido: Linux ou WSL com Python 3 e `objdump` (binutils).
 
-## Como compilar e instalar
+## Como compilar (para desenvolvedores)
+
+Só é preciso para quem quer modificar o port. Para jogar, use o APK dos Releases.
 
 1. **Gerar o código traduzido a partir do seu exe** (o `gen/` não vai no repositório):
    ```sh
