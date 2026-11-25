@@ -1,0 +1,14 @@
+# codigo traduzido do Bully.exe (derivado do jogo: NAO publicar)
+app/src/main/cpp/gen/*.cpp
+app/src/main/cpp/gen/funcs.h
+# arquivos do jogo e saidas
+*.exe
+*.img
+*.sea
+dis*.txt
+build/
+app/build/
+.gradle/
+.cxx/
+local.properties
+*.apk
